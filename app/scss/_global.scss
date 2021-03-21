@@ -10,11 +10,60 @@ a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
-  cursor: pointer;
- }
+  &:hover {
+    color: #003300;
+  }
+}
 html,
 body {
   position: relative;
   overflow-x: hidden;
   min-width: 320px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #697899;
 }
+.container {
+  @media (min-width: 1600px) {
+    max-width: 1600px;
+    padding: 0 15px;
+  }
+}
+.container-fluid {
+  @media (min-width: 1680px) {
+    max-width: 1920px;
+    width: 100%;
+  }
+  @media (min-width: 1280px) {
+    padding: 0 0;
+  }
+}
+a[class$="__logo"] {
+  font-family: "Molle", cursive;
+  font-size: 32px;
+  &:hover {
+    color: #fff;
+  }
+}
+.white-btn {
+  background-color: #fff;
+  color: #2b802b;
+  border-radius: 25px;
+  height: 50px;
+  width: fit-content;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+h3[class$="title"] {
+  color: #697899;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 0 auto;
+}
+// .bg-accent{
+//   background-color:#3ad531;
+// }

@@ -1,3 +1,321 @@
 @import "global";
 @import "vars";
 @import "fonts";
+
+// head start
+.head {
+  .container-fluid {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  color: #fff;
+}
+.header__inner {
+  margin-top: 90px;
+}
+.header__nav {
+  max-width: 60%;
+  width: 100%;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head__title-box {
+  text-align: center;
+  color: #fff;
+}
+.head__title {
+  font-family: "Pacifico", cursive;
+  font-size: 130px;
+  margin-bottom: 45px;
+}
+.head__title-slogan {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-left: -100px;
+  margin-top: -45px;
+  margin-bottom: 50px;
+}
+.head__nav-bottom-items {
+  color: #fff;
+  min-height: 150px;
+}
+.head__nav-bottom-item {
+  svg {
+    margin-right: 5px;
+  }
+}
+#wrap {
+  position: relative;
+  height: 50px;
+  float: right;
+  padding: 0;
+  position: relative;
+  padding-left: 150px;
+}
+
+input[type="text"] {
+  height: 50px;
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 100;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
+  cursor: pointer;
+}
+
+input[type="text"]:focus:hover {
+  border-bottom: 1px solid #fff;
+}
+
+input[type="text"]:focus {
+  width: 200px;
+  z-index: 1;
+  border-bottom: 1px solid #fff;
+  cursor: text;
+}
+input[type="submit"] {
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  float: right;
+  background: url("data: image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 55 55' style='width: 100px;' %3E%3Cg%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3E%3C/g%3E%3C/svg%3E")
+    no-repeat;
+  background-size: auto;
+  text-indent: -10000px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+  background-color: #fff;
+  background-position-x: 18px;
+  background-position-y: 18px;
+}
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+#search_submit:focus,
+#search_submit:active,
+#search_submit:visited {
+  outline: none;
+}
+
+// head end
+
+// places start
+.places {
+  padding-top: 75px;
+  color: #fff;
+}
+h3.places__title {
+  margin-bottom: 75px;
+}
+.places__items {
+  max-width: 1920px;
+}
+.places__items-row-1 {
+  .places__card-img {
+    max-height: 270px;
+    min-height: 270px;
+  }
+  .places__card-col:nth-child(2) {
+    .places__card-img {
+      max-height: 570px;
+    }
+    .places__card-link-wrap {
+      background-image: linear-gradient(to top, rgba(43, 128, 43, 0.7), rgba(43, 128, 43, 0.7));
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    a.places__card-link {
+      margin-bottom: 30px;
+      font-size: 60px;
+    }
+  }
+}
+.places__items-row-2 {
+  .places__card-img {
+    max-height: 468px;
+  }
+}
+.places__card-link-wrap {
+  display: flex;
+  align-items: flex-end;
+}
+a.places__card-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 82px;
+}
+.places__card-link-box {
+  display: flex;
+}
+a.places__card-link-btn {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  font-size: 12px;
+  font-weight: 700;
+  width: fit-content;
+  padding: 0 20px;
+}
+a.places__card-link-btn + a.places__card-link-btn {
+  margin-left: 20px;
+}
+// places end
+
+// hotels start
+.hotels {
+  .container-fluid {
+    padding: 80px 20px 50px 20px;
+    background-color: #f9f9f9;
+  }
+}
+h3.hotels__title {
+  padding-bottom: 75px;
+}
+.hotels__item {
+  .white-btn {
+    box-shadow: 0px 0px 65px 0px rgba(163, 163, 163, 0.25);
+  }
+}
+.hotels__item-detail-box.card-body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+h6.hotels__item-title {
+  font-size: 18px;
+  line-height: 36px;
+  color: $text;
+  width: 50%;
+  margin-bottom: 0;
+}
+.hotels__item-price {
+  font-size: 36px;
+  font-weight: 300;
+
+  text-align: right;
+  width: 50%;
+}
+.hotels__item-price-days {
+  margin-top: -5px;
+  font-size: 14px;
+  color: rgba(105, 120, 153, 0.302);
+}
+
+.hotels__item-rating {
+  color: #ffce23;
+  font-size: 16px;
+  width: 50%;
+  margin-top: -25px;
+}
+.bi-star-fill + .bi-star-fill {
+  margin-left: 5px;
+}
+.hotels__item-btn {
+  box-shadow: 0px 0px 65px 0px rgba(163, 163, 163, 0.25);
+  margin-bottom: -25px;
+}
+
+.hotels__btn-all {
+  @extend .white-btn;
+  color: #c5c5c5;
+  border: 2px solid rgb(233, 233, 233);
+  background-color: rgba(255, 255, 255, 0);
+}
+// hotels end
+
+// feedback start
+
+.feedback {
+  padding: 30px 0;
+  color: #fff;
+}
+.feedback__slider-inner {
+  position: relative;
+}
+.feedback__slider-item-title {
+  font-size: 90px;
+  position: absolute;
+  max-width: 860px;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 999;
+  text-align: center;
+  font-weight: 700;
+  span {
+    font-family: "Pacifico", cursive;
+  }
+}
+.feedback__slider-item {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  font-size: 18px;
+  line-height: 48px;
+}
+.feedback__slider-item-text {
+  margin: 0 auto;
+  width: 770px;
+  max-height: 255px;
+  margin-bottom: 100px;
+  text-align: center;
+  margin-top: 40%;
+}
+.feedback__slider-item-name {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+.carousel-indicators {
+  bottom: 25%;
+  li {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+  .active {
+    color: $accent;
+  }
+}
+//feedback end
+.footer {
+  padding: 55px 0;
+  text-align: center;
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+// footer start
+
+// footer end
