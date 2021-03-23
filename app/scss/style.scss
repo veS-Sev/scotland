@@ -8,6 +8,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    @media (max-width: 1280px) {
+      padding: 0;
+    }
   }
   color: #fff;
 }
@@ -18,6 +21,7 @@
   max-width: 60%;
   width: 100%;
 }
+
 .nav-item {
   display: flex;
   align-items: center;
@@ -42,11 +46,25 @@
 .head__nav-bottom-items {
   color: #fff;
   min-height: 150px;
+  margin-left: -5px;
+  @media (max-width:800px){
+    padding-bottom:20px;
+    justify-content: center;
+   }
 }
 .head__nav-bottom-item {
   svg {
     margin-right: 5px;
   }
+}
+.head__nav-bottom-item.nav-item {
+  @media (max-width:1280px){
+  width: calc( 25% - 5px);
+ }
+ @media (max-width:800px){
+   margin-top:20px;
+  width: calc( 33.33% - 5px);
+ }
 }
 #wrap {
   position: relative;
@@ -55,6 +73,9 @@
   padding: 0;
   position: relative;
   padding-left: 150px;
+  @media (max-width:800px){
+  padding-left:0;
+   }
 }
 
 input[type="text"] {
@@ -138,6 +159,7 @@ h3.places__title {
   .places__card-col:nth-child(2) {
     .places__card-img {
       max-height: 570px;
+      min-height: 570px;
     }
     .places__card-link-wrap {
       background-image: linear-gradient(to top, rgba(43, 128, 43, 0.7), rgba(43, 128, 43, 0.7));
