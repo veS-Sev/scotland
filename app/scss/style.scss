@@ -17,6 +17,34 @@
 .header__inner {
   margin-top: 90px;
 }
+.header__menu-btn{
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius:50%;
+  box-shadow: 0px 0px 65px 0px rgba(163, 163, 163, 0.25);
+  cursor:pointer;
+  padding:10px 0;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  border:none;
+  outline: none;
+  &:focus{
+    outline:none;
+  }
+  div{
+    background-color:$accent;
+    height: 2px;
+    width: 25px;
+    border-radius:50%;
+  }
+  div+ div{
+    margin-top: 5px;
+  }
+}
 .header__nav {
   max-width: 60%;
   width: 100%;

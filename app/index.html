@@ -24,18 +24,33 @@
         <header class="header">
           <div class="container">
             <div class="header__inner d-flex justify-content-between">
-              <a href="#" class="header__logo">SatyS</a>
-              <nav class="header__nav">
-                <ul class="header__nav-items nav nav-pills nav-fill">
-                  <li class="header__nav-item nav-item "><a href="#" class="header__nav-link nav-link">Экскурсии</a></li>
-                  <li class="header__nav-item nav-item"><a href="#" class="header__nav-link nav-link">Рестораны</a></li>
-                  <li class="header__nav-item nav-item"><a href="#" class="header__nav-link nav-link ">Рейсы</a></li>
-                  <li class="header__nav-item nav-item"><a href="#" class="header__nav-link nav-link">Визы</a></li>
-                  <li class="header__nav-item nav-item"><a href="#" class="header__nav-link nav-link">О Шотландии</a>
-                  </li>
-                  <li class="header__nav-item nav-item"><a href="#" class="header__nav-link white-btn">Заказать тур</a>
-                  </li>
-                </ul>
+
+              <nav class="header__nav navbar navbar-expand-lg nav-pills nav-fill">
+                <a href="#" class="header__logo">SatyS</a>
+                <button class=" header__menu-btn navbar-toggler" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+                <div class=" header__nav-items-wrap collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="header__nav-items navbar-nav">
+                    <li class="header__nav-item nav-item "><a href="#" class="header__nav-link nav-link ">Экскурсии</a>
+                    </li>
+                    <li class="header__nav-item nav-item"><a href="#" class="header__nav-link nav-link ">Рестораны</a>
+                    </li>
+                    <li class="header__nav-item nav-item"><a href="#" class="header__nav-link nav-link ">Рейсы</a></li>
+                    <li class="header__nav-item nav-item"><a href="#" class="header__nav-link nav-link ">Визы</a></li>
+                    <li class="header__nav-item nav-item"><a href="#" class="header__nav-link nav-link ">О Шотландии</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li class="header__nav-item nav-item"><a href="#" class="header__nav-link white-btn">Заказать
+                        тур</a>
+                    </li>
+                  </ul>
+                </div>
               </nav>
             </div>
           </div>
@@ -331,7 +346,7 @@
           </ol>
 
           <div class="feedback__slider-inner carousel-inner">
-            <h2 class="feedback__slider-item-title">И создал Бог  <span> Шотландию</span> </h2>
+            <h2 class="feedback__slider-item-title">И создал Бог <span> Шотландию</span> </h2>
             <div class="feedback__slider-item d-block w-100 carousel-item active"
               style="background-image:linear-gradient(to top, rgba(43, 128, 43,0.7), rgba(43, 128, 43,0.7)),url(../images/feedback/feedback-img-1.jpg)">
               <h3 class="feedback__slider-item-title"></h3>
